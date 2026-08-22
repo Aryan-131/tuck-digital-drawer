@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TUCK — A home for the things you save</title>
+  <meta name="description" content="TUCK is a digital drawer for links, screenshots, receipts, notes and everything else you want to keep and find later." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">TUCK</div>
+      
+      <div class="nav-links" id="navLinks">
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#collections" class="nav-link">Collections</a>
+        <a href="#preview" class="nav-link">Preview</a>
+        <a href="#about" class="nav-link">About</a>
+      </div>
+
+      <div class="nav-actions">
+        <a href="#cta" class="nav-cta">Get Tuck →</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#how-it-works" class="mobile-link">How It Works</a>
+      <a href="#collections" class="mobile-link">Collections</a>
+      <a href="#preview" class="mobile-link">Preview</a>
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#cta" class="mobile-link mobile-cta">Get Tuck →</a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-container">
+      <div class="hero-text">
+        <div class="hero-label">YOUR DIGITAL DRAWER</div>
+        <h1 class="hero-heading">A home for<br>the things<br>you save.</h1>
+        <p class="hero-description">
+          Links, screenshots, receipts, notes and little things you don't want to lose — kept in one place and easy to find later.
+        </p>
+        <div class="hero-buttons">
+          <a href="#cta" class="btn btn-primary">Start collecting →</a>
+          <a href="#how-it-works" class="btn btn-secondary">See how it works</a>
+        </div>
+        <p class="hero-quote">Saved somewhere isn't a filing system.</p>
+      </div>
+
+      <div class="hero-visual">
+        <div class="digital-items">
+          <!-- Screenshot -->
+          <div class="item item-screenshot">
+            <img src="hero-screenshot.png" alt="Running shoes saved as a shopping screenshot" class="item-image">
+          </div>
+
+          <!-- Link -->
+          <div class="item item-link">
+            <img src="hero-article.png" alt="CSS Grid guide article preview" class="item-image">
+          </div>
+
+          <!-- Receipt -->
+          <div class="item item-receipt">
+            <img src="hero-receipt.png" alt="Coffee receipt saved to Tuck" class="item-image">
+          </div>
+
+          <!-- Location -->
+          <div class="item item-location">
+            <img src="hero-location.png" alt="Blue Tokai cafe location saved" class="item-image">
+          </div>
+
+          <!-- PDF -->
+          <div class="item item-pdf">
+            <img src="hero-pdf.png" alt="College registration PDF document" class="item-image">
+          </div>
+
+          <!-- Note -->
+          <div class="item item-note">
+            <img src="hero-note.png" alt="Handwritten note with website idea" class="item-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PROBLEM ==================== -->
+  <section class="problem" id="problem">
+    <div class="problem-container">
+      <div class="problem-label">THE PROBLEM</div>
+      <h2 class="problem-heading">We save everything.</h2>
+
+      <div class="problem-grid">
+        <div class="problem-item">
+          <div class="problem-icon">📸</div>
+          <div class="problem-arrow">↓</div>
+          <div class="problem-location">Gallery</div>
+        </div>
+        <div class="problem-item">
+          <div class="problem-icon">🔗</div>
+          <div class="problem-arrow">↓</div>
+          <div class="problem-location">Chat</div>
+        </div>
+        <div class="problem-item">
+          <div class="problem-icon">🧾</div>
+          <div class="problem-arrow">↓</div>
+          <div class="problem-location">Downloads</div>
+        </div>
+        <div class="problem-item">
+          <div class="problem-icon">📍</div>
+          <div class="problem-arrow">↓</div>
+          <div class="problem-location">Messages</div>
+        </div>
+      </div>
+
+      <div class="problem-image">
+        <img src="problem-desk.png" alt="Warm desk with scattered receipts, notes, smartphone and laptop showing digital clutter" />
+      </div>
+
+      <div class="problem-divider"></div>
+
+      <p class="problem-follow">And somehow, when we need it again...</p>
+      <h3 class="problem-question">Where did I save that?</h3>
+    </div>
+  </section>
+
+  <!-- ==================== HOW IT WORKS ==================== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="how-container">
+      <div class="how-label">HOW TUCK WORKS</div>
+      <h2 class="how-heading">Three steps. That's it.</h2>
+
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-title">Save It</div>
+          <p class="step-description">Drop in a screenshot, link, receipt, note or anything else worth keeping.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-title">Tuck It Away</div>
+          <p class="step-description">Give it a collection or let it sit in your personal archive.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-title">Find It Later</div>
+          <p class="step-description">Search by what you remember instead of where you saved it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRODUCT PREVIEW ==================== -->
+  <section class="preview" id="preview">
+    <div class="preview-container">
+      <div class="preview-label">THE TUCK SPACE</div>
+      <h2 class="preview-heading">Everything you've saved.<br>Finally in one place.</h2>
+
+      <div class="product-interface">
+        <!-- Sidebar -->
+        <aside class="interface-sidebar">
+          <div class="sidebar-header">Collections</div>
+          <div class="sidebar-nav">
+            <div class="sidebar-item active">Everything</div>
+            <div class="sidebar-item">Shopping</div>
+            <div class="sidebar-item">College</div>
+            <div class="sidebar-item">Trips</div>
+            <div class="sidebar-item">Recipes</div>
+            <div class="sidebar-item">Ideas</div>
+            <div class="sidebar-item">Personal</div>
+          </div>
+        </aside>
+
+        <!-- Main Content -->
+        <div class="interface-main">
+          <div class="interface-header">
+            <input type="text" class="search-box" placeholder="Search your saved things..." />
+            <button class="btn-add">+ Add</button>
+          </div>
+
+          <div class="saved-items-grid">
+            <!-- Screenshot Item -->
+            <div class="saved-item">
+              <div class="item-preview item-preview-screenshot">
+                <div class="preview-label">Screenshot</div>
+              </div>
+              <div class="item-info">
+                <h4>Running shoes I liked</h4>
+                <div class="item-meta">
+                  <span class="badge">Shopping</span>
+                  <span class="date">2 days ago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Link Item -->
+            <div class="saved-item">
+              <div class="item-preview item-preview-link">
+                <div class="preview-icon">🔗</div>
+              </div>
+              <div class="item-info">
+                <h4>CSS Grid guide</h4>
+                <div class="item-meta">
+                  <span class="badge">College</span>
+                  <span class="date">1 day ago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Receipt Item -->
+            <div class="saved-item">
+              <div class="item-preview item-preview-receipt">
+                <div class="preview-label">Receipt</div>
+              </div>
+              <div class="item-info">
+                <h4>Headphones</h4>
+                <div class="item-meta">
+                  <span class="badge">Shopping</span>
+                  <span class="date">4 days ago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Item -->
+            <div class="saved-item">
+              <div class="item-preview item-preview-location">
+                <div class="preview-icon">📍</div>
+              </div>
+              <div class="item-info">
+                <h4> Cafe Karmaa Diaries — Siliguri</h4>
+                <div class="item-meta">
+                  <span class="badge">Trips</span>
+                  <span class="date">1 week ago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- PDF Item -->
+            <div class="saved-item">
+              <div class="item-preview item-preview-pdf">
+                <div class="preview-label">PDF</div>
+              </div>
+              <div class="item-info">
+                <h4>Invoice #2024-001</h4>
+                <div class="item-meta">
+                  <span class="badge">Personal</span>
+                  <span class="date">3 days ago</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Note Item -->
+            <div class="saved-item">
+              <div class="item-preview item-preview-note">
+                <div class="preview-label">Note</div>
+              </div>
+              <div class="item-info">
+                <h4>Book recommendations</h4>
+                <div class="item-meta">
+                  <span class="badge">Ideas</span>
+                  <span class="date">2 days ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== COLLECTIONS ==================== -->
+  <section class="collections" id="collections">
+    <div class="collections-container">
+      <div class="collections-label">COLLECTIONS</div>
+      <h2 class="collections-heading">Keep things together naturally.</h2>
+
+      <div class="collections-grid">
+        <div class="collection-card collection-large">
+          <img src="collection-trips.png" alt="Airplane window view at sunset during travel" class="collection-image">
+          <div class="collection-overlay">
+            <div class="collection-title">Trips</div>
+            <div class="collection-count">18 saved things</div>
+          </div>
+        </div>
+
+        <div class="collection-card">
+          <img src="collection-shopping.png" alt="Canvas shopping bag on wooden surface" class="collection-image">
+          <div class="collection-overlay">
+            <div class="collection-title">Shopping</div>
+            <div class="collection-count">12 items</div>
+          </div>
+        </div>
+
+        <div class="collection-card">
+          <img src="collection-college.png" alt="Student workspace with textbook, notebook and coffee" class="collection-image">
+          <div class="collection-overlay">
+            <div class="collection-title">College</div>
+            <div class="collection-count">9 items</div>
+          </div>
+        </div>
+
+        <div class="collection-card collection-large">
+          <img src="collection-ideas.png" alt="Creative desk scene with sketches and notebook" class="collection-image">
+          <div class="collection-overlay">
+            <div class="collection-title">Ideas</div>
+            <div class="collection-count">24 items</div>
+          </div>
+        </div>
+
+        <div class="collection-card">
+          <img src="collection-recipes.png" alt="Overhead shot of simple homemade meal on ceramic plate" class="collection-image">
+          <div class="collection-overlay">
+            <div class="collection-title">Recipes</div>
+            <div class="collection-count">7 items</div>
+          </div>
+        </div>
+
+        <div class="collection-card">
+          <img src="collection-work.png" alt="Minimal workspace with laptop, desk lamp and notebook" class="collection-image">
+          <div class="collection-overlay">
+            <div class="collection-title">Work</div>
+            <div class="collection-count">15 items</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEARCH EXPERIENCE ==================== -->
+  <section class="search-experience" id="search">
+    <div class="search-container">
+      <h2 class="search-heading">Remember what you saved.<br>Not where you saved it.</h2>
+
+      <div class="search-demo">
+        <div class="search-input-demo">
+          <input type="text" class="search-input" placeholder="coffee shop" disabled />
+        </div>
+
+        <div class="search-results">
+          <div class="result-item">
+            <img src="search-location.png" alt="Location map thumbnail" class="result-thumbnail">
+            <div class="result-text">
+              <div class="result-title">Cafe Karmaa Diaries — Siliguri</div>
+              <div class="result-source">Saved from WhatsApp</div>
+            </div>
+          </div>
+
+          <div class="result-item">
+            <img src="search-cafe-interior.png" alt="Cafe interior thumbnail" class="result-thumbnail">
+            <div class="result-text">
+              <div class="result-title">Cafe interior screenshot</div>
+              <div class="result-source">Saved from Gallery</div>
+            </div>
+          </div>
+
+          <div class="result-item">
+            <img src="search-article.png" alt="Article thumbnail" class="result-thumbnail">
+            <div class="result-text">
+              <div class="result-title">Coffee brewing guide</div>
+              <div class="result-source">Saved from Chrome</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FINAL CTA ==================== -->
+  <section class="final-cta" id="cta">
+    <div class="cta-container">
+      <h2 class="cta-heading">Save it now.<br>Find it when you need it.</h2>
+      <p class="cta-description">
+        Your digital life is already full of useful things. Tuck just gives them somewhere to live.
+      </p>
+      <div class="cta-buttons">
+        <a href="#" class="btn btn-primary btn-large">Start collecting →</a>
+        <a href="#preview" class="btn btn-secondary btn-large">Explore the preview</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">TUCK</div>
+        <p class="footer-tagline">A home for the things you save.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#collections">Collections</a>
+        <a href="#preview">Preview</a>
+        <a href="#about">About</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Concept project by Aryan Bhujel</p>
+        <p>© 2026 TUCK</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,504 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   Breakpoints: Desktop (1200px) / Tablet (834px) / Mobile (480px)
+   ========================================================================== */
+
+/* ---------- TABLET (834px and below) ---------- */
+@media (max-width: 834px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-visual {
+    max-height: 350px;
+  }
+
+  .digital-items {
+    height: 350px;
+  }
+
+  .item {
+    width: 120px !important;
+    padding: 12px;
+  }
+
+  .item-screenshot {
+    height: 100px !important;
+  }
+
+  .item-receipt {
+    height: 80px !important;
+  }
+
+  .item-pdf {
+    height: 90px !important;
+  }
+
+  .problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .product-interface {
+    grid-template-columns: 150px 1fr;
+  }
+
+  .interface-sidebar {
+    padding: 16px;
+  }
+
+  .saved-items-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  .collection-large {
+    grid-column: span 1;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .search-heading {
+    font-size: 1.8rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ---------- MOBILE (480px and below) ---------- */
+@media (max-width: 480px) {
+  /* General */
+  section {
+    padding: 60px 16px;
+  }
+
+  .divider {
+    margin: 40px 0;
+  }
+
+  /* Navigation */
+  .nav-container {
+    padding: 0 16px;
+  }
+
+  .nav-brand {
+    font-size: 1rem;
+  }
+
+  .mobile-menu {
+    padding: 16px;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 80px 16px;
+  }
+
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-visual {
+    max-height: 280px;
+    margin-top: 20px;
+  }
+
+  .digital-items {
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    align-content: flex-start;
+  }
+
+  .item {
+    width: 90px !important;
+    height: 90px !important;
+    padding: 0;
+    font-size: 0.75rem;
+    position: static !important;
+  }
+
+  .item-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .item-screenshot {
+    height: 90px !important;
+  }
+
+  .item-receipt {
+    height: 90px !important;
+    font-size: 0.75rem;
+  }
+
+  .item-pdf {
+    height: 90px !important;
+  }
+
+  .item-location {
+    height: 90px !important;
+  }
+
+  .item-link {
+    height: 90px !important;
+  }
+
+  .item-note {
+    height: 90px !important;
+  }
+
+  /* Problem */
+  .problem {
+    padding: 60px 16px;
+  }
+
+  .problem-heading {
+    font-size: 1.8rem;
+  }
+
+  .problem-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .problem-icon {
+    font-size: 2rem;
+  }
+
+  .problem-question {
+    font-size: 1.4rem;
+  }
+
+  /* How It Works */
+  .how-it-works {
+    padding: 60px 16px;
+  }
+
+  .how-heading {
+    font-size: 1.8rem;
+  }
+
+  .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .step-number {
+    font-size: 2.5rem;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+  }
+
+  /* Product Preview */
+  .preview {
+    padding: 60px 16px;
+  }
+
+  .preview-heading {
+    font-size: 1.8rem;
+  }
+
+  .product-interface {
+    grid-template-columns: 1fr;
+  }
+
+  .interface-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+    padding: 12px;
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+  }
+
+  .sidebar-nav {
+    flex-direction: row;
+    gap: 6px;
+    flex-wrap: nowrap;
+  }
+
+  .sidebar-item {
+    white-space: nowrap;
+    font-size: 0.8rem;
+    padding: 6px 10px;
+  }
+
+  .interface-main {
+    padding: 16px;
+  }
+
+  .interface-header {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .search-box {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+
+  .btn-add {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  .saved-items-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .item-preview {
+    height: 100px;
+  }
+
+  .item-info {
+    padding: 12px;
+  }
+
+  .item-info h4 {
+    font-size: 0.85rem;
+  }
+
+  .item-meta {
+    font-size: 0.75rem;
+  }
+
+  /* Collections */
+  .collections {
+    padding: 60px 16px;
+  }
+
+  .collections-heading {
+    font-size: 1.8rem;
+  }
+
+  .collections-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .collection-card {
+    min-height: 180px;
+  }
+
+  .collection-large {
+    grid-column: span 1;
+  }
+
+  .collection-overlay {
+    padding: 16px 12px;
+  }
+
+  .collection-title {
+    font-size: 1rem;
+  }
+
+  .collection-count {
+    font-size: 0.75rem;
+  }
+
+  /* Search Experience */
+  .search-experience {
+    padding: 60px 16px;
+  }
+
+  .search-heading {
+    font-size: 1.5rem;
+  }
+
+  .search-demo {
+    max-width: 100%;
+  }
+
+  .search-input {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+
+  .result-item {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .result-icon {
+    font-size: 1.2rem;
+  }
+
+  .result-title {
+    font-size: 0.85rem;
+  }
+
+  .result-source {
+    font-size: 0.75rem;
+  }
+
+  /* Final CTA */
+  .final-cta {
+    padding: 60px 16px;
+  }
+
+  .cta-heading {
+    font-size: 1.8rem;
+  }
+
+  .cta-description {
+    font-size: 0.95rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cta-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 16px 30px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+  }
+
+  .footer-links,
+  .footer-socials {
+    gap: 10px;
+  }
+
+  .footer-links a,
+  .footer-socials a {
+    font-size: 0.85rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+  }
+}
+
+/* ---------- EXTRA SMALL (320px and below) ---------- */
+@media (max-width: 320px) {
+  .hero-heading {
+    font-size: 1.6rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .problem-heading {
+    font-size: 1.5rem;
+  }
+
+  .how-heading {
+    font-size: 1.5rem;
+  }
+
+  .preview-heading {
+    font-size: 1.5rem;
+  }
+
+  .collections-heading {
+    font-size: 1.5rem;
+  }
+
+  .search-heading {
+    font-size: 1.3rem;
+  }
+
+  .cta-heading {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- LARGE DESKTOP (1440px and above) ---------- */
+@media (min-width: 1440px) {
+  .hero-container {
+    gap: 100px;
+  }
+
+  .digital-items {
+    height: 600px;
+  }
+
+  .item {
+    width: 240px !important;
+    padding: 20px;
+  }
+
+  .item-screenshot {
+    height: 160px !important;
+  }
+
+  .item-receipt {
+    height: 120px !important;
+  }
+
+  .item-pdf {
+    height: 130px !important;
+  }
+}
